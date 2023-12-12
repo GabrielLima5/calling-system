@@ -1,6 +1,7 @@
 form textarea{
     resize: none;
     height: 105px;
+    font-family: 'Raleway', sans-serif;
 }
 
 form input[type="radio"]{
@@ -25,4 +26,8 @@ form input[type="radio"]:not(:first-child){
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@media only screen and (max-width: 500px){
+    
 }

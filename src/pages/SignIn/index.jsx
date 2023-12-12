@@ -22,10 +22,11 @@ export default function SignIn(){
             <div className="login">
                 <div className="login-area">
                     <img src={logo} alt="Logo Sistema de Chamados" />
+                    <h1>Sistema de Chamados</h1>
                 </div>
 
                 <form onSubmit={handleSubmit}>
-                    <h1>Entrar</h1>
+                    <h2>Entrar</h2>
                     <input 
                         type="email" 
                         placeholder="email@email.com"

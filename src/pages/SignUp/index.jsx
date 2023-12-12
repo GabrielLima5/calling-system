@@ -23,10 +23,11 @@ export default function SignUp(){
             <div className="login">
                 <div className="login-area">
                     <img src={logo} alt="Logo Sistema de Chamados" />
+                    <h1>Sistema de Chamados</h1>
                 </div>
 
                 <form onSubmit={handleSubmit}>
-                    <h1>Cadastrar</h1>
+                    <h2>Cadastrar</h2>
                     <input 
                         type="text" 
                         placeholder="Seu Nome"

@@ -5,7 +5,7 @@
 body{
   display: flex;
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #485563, #29323c);
   color: #fff;
   height: 100vh;
   margin: 0;
