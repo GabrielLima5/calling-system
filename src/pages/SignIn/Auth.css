@@ -21,6 +21,7 @@
 }
 
 .login-area{
+    padding: 0 20px;
     background: #000;
     width: 100%;
     display: flex;
@@ -72,4 +73,27 @@ form button{
     margin: 1.5rem 0;
     color: blue;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 650px){
+    .login{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .login{
+        width: 300px;
+    }
+
+    .login h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .login{
+        width: 260px;
+    }
 }
