@@ -15,12 +15,14 @@ export default function Profile(){
     const [name, setName] = useState(user.name || null)
     const [email] = useState(user.email || null)
     const [imageAvatar, setImageAvatar] = useState(null)
+    const [avatarUrl, setAvatarUrl] = useState(user && user.avatarUrl)
 
     const handleFile = (e) => {
         const image = e.target.files[0]
 
         if (image.type === 'image/jpeg' || image.type === 'image/png'){
-            setImageAvatar(URL.createObjectURL(image))
+            setImageAvatar(image)
+            setAvatarUrl(URL.createObjectURL(image))
         } else {
             alert('Apenas imagens do tipo JPG ou PNG são aceitos.')
             setImageAvatar(null)
@@ -29,6 +31,7 @@ export default function Profile(){
     }
 
     const handleUpload = () => {
+        console.log(imageAvatar)
         const currentUid = user.uid
         const uploadRef = ref(storage, `images/${currentUid}/${imageAvatar.name}`)
         const uploadTask = uploadBytes(uploadRef, imageAvatar)
@@ -96,7 +99,7 @@ export default function Profile(){
                                 <FiUpload color="#fff" size={25} />
                             </span>
                             <input type="file" accept="image/" onChange={handleFile} />
-                            <img src={imageAvatar || user.avatarUrl || avatar} alt="Avatar do usuário" width={250} height={250} />
+                            <img src={avatarUrl || user.avatarUrl || avatar} alt="Avatar do usuário" width={250} height={250} />
                         </label>
 
                         <label>

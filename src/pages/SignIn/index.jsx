@@ -43,9 +43,8 @@ export default function SignIn(){
                         {loadingAuth ? 'Carregando...' : 'Acessar'}
                     </button>
                 </form>
-
-                <Link to="/register">Não tem uma conta? Registre-se.</Link>
             </div>
+            <Link to="/register">Não tem uma conta? Registre-se.</Link>
         </div>
     )
 }

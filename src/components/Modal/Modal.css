@@ -67,3 +67,14 @@
     white-space: pre-wrap;
     line-height: 150%;
 }
+
+@media only screen and (max-width: 650px){
+    .modal .container{
+        margin: 0 50px;
+    }
+
+    .row span{
+        display: block;
+        margin: 10px 0;
+    }
+}

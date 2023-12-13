@@ -19,7 +19,7 @@ export default function Modal({details, setShowModal}){
                         <span>Cadastrado em: <i>{details.createdFormat}</i></span>
                     </div>
                     <div className="row">
-                       <span>Status: <i style={{color: details.status === 'Aberto' ? '#017601' : '#fff'}}>{details.status}</i></span>
+                       <span>Status: <i style={{color: details.status === 'Aberto' ? '#017601' : '#000'}}>{details.status}</i></span>
                     </div>
                     {details.complement && (
                         <>

@@ -27,7 +27,7 @@ export default function SignUp(){
                 </div>
 
                 <form onSubmit={handleSubmit}>
-                    <h2>Cadastrar</h2>
+                    <h2 style={{margin: 0}}>Cadastrar</h2>
                     <input 
                         type="text" 
                         placeholder="Seu Nome"
@@ -50,9 +50,8 @@ export default function SignUp(){
                         {loadingAuth ? 'Carregando' : 'Criar conta'}
                     </button>
                 </form>
-
-                <Link to="/">Já tem uma conta? Faça o login.</Link>
             </div>
+            <Link to="/">Já tem uma conta? Faça o login.</Link>
         </div>
     )
 }
