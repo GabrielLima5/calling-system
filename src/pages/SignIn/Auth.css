@@ -77,6 +77,10 @@ form button{
 }
 
 @media only screen and (max-width: 650px){
+    form{
+        padding: 20px
+    }
+    
     .login{
         flex-direction: column;
         width: 400px;
